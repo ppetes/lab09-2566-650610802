@@ -9,7 +9,7 @@ export const Task = ({
     deleteTaskFunc(id);
   };
 
-  const doneBtnOnClick = () => {
+  const toggleDoneBtnOnClick = () => {
     toggleDoneTaskFunc(id);
   };
 
@@ -19,7 +19,7 @@ export const Task = ({
         {title}
       </span>
 
-      <button className="btn btn-success" onClick={doneBtnOnClick}>
+      <button className="btn btn-success" onClick={toggleDoneBtnOnClick}>
         Done
       </button>
       <button className="btn btn-danger" onClick={deleteBtnOnClick}>
